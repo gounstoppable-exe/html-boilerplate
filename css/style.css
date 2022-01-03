@@ -1,0 +1,125 @@
+/* ====== FONTS IMPORT ======  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+@font-face {
+  font-family: MonumentR;
+  src: url(../fonts/MonumentExtendedRegular.otf);
+}
+/* ====== CSS RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ====== SCROLLBAR ====== */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0f0f0f;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* ====== MAIN CSS ====== */
+body {
+  overflow-x: hidden;
+}
+main {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #2c82e6;
+  padding: 5rem 1rem;
+}
+.upper_texts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.upper_texts h1 {
+  font-family: MonumentR;
+  color: #0f0f0f;
+  font-size: 2.2rem;
+}
+.upper_texts p {
+  margin-top: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  width: 92vw;
+  color: #fff;
+  font-size: 1rem;
+}
+#horizontal_line {
+  width: 50vw;
+  height: 0.2rem;
+  background-color: #0f0f0f;
+  border-radius: 1rem;
+  margin-top: 1.4rem;
+}
+p b {
+  font-weight: 700;
+  color: #0f0f0f;
+}
+.main_code {
+  margin-top: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main_code pre {
+  width: 80vw !important;
+  background-color: #0f0f0f !important;
+  border-radius: 1rem !important;
+  padding: 1rem 2rem !important;
+}
+div.code-toolbar > .toolbar {
+  top: 1.6rem !important;
+  right: 1.6rem !important;
+}
+div.code-toolbar > .toolbar > .toolbar-item > a,
+div.code-toolbar > .toolbar > .toolbar-item > button,
+div.code-toolbar > .toolbar > .toolbar-item > span {
+  color: #fff !important;
+  font-size: 1rem !important;
+  padding: 0.6rem 1.6rem !important;
+  background: #f5f2f0 !important;
+  background: rgba(224, 224, 224, 0.2) !important;
+  box-shadow: 0 2px 0 0 rgb(0 0 0 / 20%) !important;
+  border-radius: 0.6rem !important;
+  font-family: "Poppins", sans-serif !important;
+}
+/* ====== RESPONSIVE CODE ======  */
+@media screen and (max-width: 768px) {
+  .upper_texts h1 {
+    font-size: 1.8rem;
+  }
+  .upper_texts p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 588px) {
+  .upper_texts h1 {
+    font-size: 1.5rem;
+  }
+  .upper_texts p {
+    font-size: 0.9rem;
+  }
+  code {
+    font-size: 0.9rem !important;
+  }
+  .main_code pre {
+    width: 90vw !important;
+  }
+}
